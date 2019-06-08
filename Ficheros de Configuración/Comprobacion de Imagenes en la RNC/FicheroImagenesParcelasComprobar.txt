@@ -1,0 +1,5 @@
+imagen1 = ('/content/2014-07-11NDVIcolorParcelaTabaco7.png','11-07-2014')
+imagen2 = ('/content/2014-08-12NDVIcolorParcelaTabaco7.png','12-08-2014')
+imagen3 = ('/content/2015-05-11NDVIcolorParcelaTabaco7.png','11-05-2015')
+imagen4 = ('/content/2015-05-27NDVIcolorParcelaTabaco7.png','27-05-2015')
+imagen5 = ('/content/2017-04-14NDVIcolorParcelaTabaco7.png','14-04-2017')

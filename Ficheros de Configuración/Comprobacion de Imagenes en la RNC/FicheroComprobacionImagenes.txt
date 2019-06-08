@@ -1,0 +1,15 @@
+enFormatoZIP = True
+rutaZip = /content/ModeloyPesosTabaco.zip
+rutaModeloYPesos = /content/ModeloyPesosTabaco
+nombreModelo = 'modeloTabaco.h5'
+nombrePesos = 'pesosTabaco.h5'
+fechaInicioSinSiembra = '01-03-2013'
+fechaFinSinSiembra = '11-05-2013'
+fechaInicioSiembra = '12-05-2013'
+fechaFinSiembra = '16-06-2013'
+fechaInicioCrecimiento = '17-06-2013'
+fechaFinCrecimiento = '02-10-2013'
+rutaFicheroImagenesComprobar = '/content/FicheroImagenesParcelasComprobar.txt'
+alturaImagen = 28
+anchuraImagen = 28
+nombreCultivo = 'Tabaco'
