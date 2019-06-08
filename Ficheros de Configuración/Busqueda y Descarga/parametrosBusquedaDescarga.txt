@@ -1,0 +1,9 @@
+minLon = -5.6103
+minLat = 39.9880
+maxLon = -5.6096
+maxLat = 39.9859
+minDate = '2013-12-31'
+maxDate = '2019-06-01'
+clouds = 20
+satellite = 'landsat-8-l1'
+rutaDescarga = '/content/descargas/ImagenesSatelite'
