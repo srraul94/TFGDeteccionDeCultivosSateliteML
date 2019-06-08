@@ -1,0 +1,11 @@
+fechaInicioSinSiembra = '01-03-2010'
+fechaFinSinSiembra = '11-05-2015'
+fechaInicioSiembra = '12-05-2014'
+fechaFinSiembra = '16-06-2015'
+fechaInicioCrecimiento = '17-06-2016'
+fechaFinCrecimiento = '02-10-2000'
+rutaImagenesDescargadas = '/content/descargas/ImagenesSatelite'
+rutaFechasImagenesDescargadas = '/content/FechasDescargadasSatelite.txt'
+rutaFicheroGeometria = '/content/geometria.txt'
+nombreParcela = ParcelaPrueba
+rutaGuardarImagenesTratadas = '/content/ImagenesTratadas'
