@@ -55,7 +55,7 @@ def preparacionGeneradorImagenesValidacion(alt,long,bsize,data_validacion):
   test_datagen = ImageDataGenerator(rescale=1. / 255, validation_split=0.2)
   
   validacion_generador = test_datagen.flow_from_directory(
-    data_entrenamiento,
+    data_validacion,
     target_size=(alt, long),
     batch_size=bsize,
     class_mode='categorical',
@@ -66,15 +66,13 @@ def preparacionGeneradorImagenesValidacion(alt,long,bsize,data_validacion):
 
 def procesoClasificacionParcelasML(parametros):
   
-  print(parametros)
-  
+  print(parametros)  
   enFormatoZIP = eval(parametros['enFormatoZIP'])
   
   try:
-  	 rutaDatosEntrenamiento = parametros['rutaDatosEntrenamiento']
-     os.stat(rutaDatosEntrenamiento) 
-     
-     print("Ya existe el directorio, no es necesario descomprimir el archivo ZIP.")
+    rutaDatosEntrenamiento = parametros['rutaDatosEntrenamiento']
+    os.stat(rutaDatosEntrenamiento) 
+    print("Ya existe el directorio, no es necesario descomprimir el archivo ZIP.")
   except:
     if (enFormatoZIP):
       
@@ -145,7 +143,7 @@ def procesoClasificacionParcelasML(parametros):
   
   print("------- Creando los generadores... -------")
   generadorEntrenamiento = preparacionGeneradorImagenesEntrenamiento(alturaImagen,longitudImagen,batch_size,rutaDatosEntrenamiento)
-  generadorValidacion = preparacionGeneradorImagenesValidacion(alturaImagen,longitudImagen,batch_size,rutaDatosValidacion)
+  generadorValidacion = preparacionGeneradorImagenesValidacion(alturaImagen,longitudImagen,batch_size,rutaDatosEntrenamiento)
   
   print("------- Construyendo la red... -------")
   parcelasModel = Sequential()
