@@ -51,6 +51,8 @@ def calcularCaracteristicasBanda(directorio,fecha):
   
   return xOrigin, yOrigin, data, pixelWidth, pixelHeight
 
+
+
 def recortarGeometria (geoms,directorio,fecha):
   in_dir = directorio+'/'+str(fecha) #ruta completa con la fecha
   

@@ -82,7 +82,7 @@ def procesoClasificacionParcelasML(parametros):
       #Ruta donde queremos que de descompriman los datos de entrenamiento y validación.
       rutaDatosEntrenamiento = parametros['rutaDatosEntrenamiento']
       
-      if ".zip" not in rutaDatosEntrenamientoZIP:  
+      if ".zip" not in rutaDatosEntrenamientoZIP and ".zip" not in rutaDatosValidacionZIP:  
         
         rutaDatosEntrenamientoZIP = rutaDatosEntrenamientoZIP+'.zip'
         
